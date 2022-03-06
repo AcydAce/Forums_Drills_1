@@ -25,9 +25,9 @@ class Main {
             variance = (Math.pow((x - mean), 2) + Math.pow((y - mean), 2) + Math.pow((z - mean), 2)) / 3;
             standardDeviation = Math.sqrt(variance);
             
-            System.out.println("Mean: " + (mean));
-            System.out.println("Variance: " + (variance));
-            System.out.println("Standard Deviation: " + (standardDeviation));
+            System.out.println("mean: " + mean);
+            System.out.println("variance: " + variance);
+            System.out.println("standard deviation: " + standardDeviation);
         }
     }
 }
