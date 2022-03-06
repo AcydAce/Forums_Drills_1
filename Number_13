@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+
+        double var0;
+        double var1;
+        double var2;
+        double posx;
+        double minusx;
+
+        Scanner num1 = new Scanner(System.in);
+        Scanner num2 = new Scanner(System.in);
+        Scanner num3 = new Scanner(System.in);
+
+        System.out.print("a: ");
+        double a = num1.nextDouble();
+
+        System.out.print("b: ");
+        double b = num1.nextDouble();
+
+        System.out.print("c: ");
+        double c = num1.nextDouble();
+
+        if (a == 0) {
+            System.out.println("Number invalid!");
+        } else {
+            var0 = (Math.pow(b, 2)) - (4 * a * c);
+            var1 = 0 - b + Math.sqrt(var0);
+            var2 = 0 - b - Math.sqrt(var0);
+            posx = var1 / (2 * a);
+            minusx = var2 / (2 * a);
+
+            System.out.println("x1: " + posx);
+            System.out.println("x2: " + minusx);
+        }
+
+    }
+}
