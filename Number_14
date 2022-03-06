@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+
+        Scanner var = new Scanner(System.in);
+        System.out.println("input Seconds: ");
+        int sec = var.nextInt();
+
+        int Hours = sec / 60;
+        int Minutes = Hours % 60;
+        int Seconds = sec % 60;
+
+        Hours = Hours / 60;
+
+        if (Hours == 1 && Minutes == 1 && Seconds == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Hours == 1 && Minutes == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Hours == 1 && Seconds == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Minutes == 1 && Seconds == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Hours == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Minutes == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else if (Seconds == 1) {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+        else {
+            System.out.println(Hours + " Hour(s)" + Minutes + " Minute(s) " + Seconds + " Second(s) ");
+        }
+
+
+
+    }
+}
